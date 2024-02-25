@@ -1,7 +1,7 @@
 <template>
     <div>
       <h2>Location Details</h2>
-      <p>Location ID: {{ $route.params.id }}</p>
+      <p>Location ID: {{ id }}</p>
      
     </div>
   </template>
@@ -10,14 +10,14 @@
   export default {
     async fetch() {
       // Fetch additional details based on $route.params.id
-      const locationId = this.$route.params.id;
+      const { id } = useRoute().params.id;
       // Update local data or Vuex store with detailed information
-      console.log("Fetching details for location ID:", locationId);
+      console.log("Fetching details for location ID:", id);
     },
   };
   </script>
   
   <style scoped>
-  /* Add your styling here */
+ 
   </style>
   

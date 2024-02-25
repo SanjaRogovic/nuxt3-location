@@ -2,7 +2,11 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  plugins: [
-    '~/plugins/pinia.js',
+  css: [
+    '@picocss/pico/css/pico.css',
   ],
+  
+  modules: [
+    '@pinia/nuxt',
+  ]
 })
