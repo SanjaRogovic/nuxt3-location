@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="pico-container">
       <LocationForm :location="selectedLocation" />
       <SuggestedLocations />
       <LocationList />
@@ -26,6 +26,11 @@
   </script>
   
   <style scoped>
+  .pico-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+}
  
   </style>
   
