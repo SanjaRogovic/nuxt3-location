@@ -3,7 +3,7 @@
       <h2 class="pico-heading--small">Suggested Locations</h2>
       <ul class="pico-list">
         <li v-for="suggestedLocation in suggestedLocations" :key="suggestedLocation.id" class="pico-list-item">
-          <a @click="selectSuggestedLocation(suggestedLocation.name)">{{ suggestedLocation.name }}</a>
+          <a @click="selectSuggestedLocation(suggestedLocation.name)" class="suggested-location-link">{{ suggestedLocation.name }}</a>
         </li>
       </ul>
     </div>
@@ -52,6 +52,12 @@
 .pico-heading--small {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+}
+
+.suggested-location-link {
+  text-decoration: none;
+  color: #0066cc;
+  display: block;
 }
  
   </style>

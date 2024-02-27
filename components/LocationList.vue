@@ -2,8 +2,8 @@
     <div>
       <h2 class="pico-heading--small">Searched Locations</h2>
       <ul class="pico-list">
-        <li v-for="location in searchedLocations" :key="location.id" class="pico-list-item">
-          <NuxtLink :to="'/location/' + location.id">{{ location.name }}</NuxtLink>
+        <li v-for="location in searchedLocations" :key="location.osm_id" class="pico-list-item">
+          <NuxtLink :to="`/location/${location.osm_id}`">{{ location.display_name }}</NuxtLink>
         </li>
       </ul>
     </div>
