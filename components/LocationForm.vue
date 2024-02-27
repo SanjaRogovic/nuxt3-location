@@ -38,15 +38,17 @@
   </script>
   
   <style scoped>
-  .pico-heading--large {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  .pico-heading--medium {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  margin-top: 20px;
 }
   .pico-button {
     padding: 0.5rem 1rem;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
+    max-width: 30%;
 }
 
 .pico-button--primary {
@@ -55,7 +57,7 @@
 }
 
 .pico-button:hover {
-    background-color: #3e8e41;
+    background-color: #5665d7;
 }
 
 .pico-button:disabled {
@@ -73,8 +75,9 @@
     flex-grow: 1;
     padding: 0.5rem;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
     margin-right: 0.5rem;
+    max-width: 60%;
 }
   
   </style>

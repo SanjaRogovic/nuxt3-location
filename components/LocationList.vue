@@ -1,9 +1,9 @@
 <template>
     <div>
-      <h2>Searched Locations</h2>
-      <ul>
-        <li v-for="location in searchedLocations" :key="location.id">
-          <router-link :to="'/location/' + location.id">{{ location.name }}</router-link>
+      <h2 class="pico-heading--small">Searched Locations</h2>
+      <ul class="pico-list">
+        <li v-for="location in searchedLocations" :key="location.id" class="pico-list-item">
+          <NuxtLink :to="'/location/' + location.id">{{ location.name }}</NuxtLink>
         </li>
       </ul>
     </div>
@@ -26,6 +26,21 @@
   </script>
   
   <style scoped>
+  .pico-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pico-list__item {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.pico-heading--small {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
  
   </style>
   
